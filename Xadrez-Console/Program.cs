@@ -1,11 +1,13 @@
 ﻿using Tabuleiro;
-class Program {
-    static void Main(String[] args){
+namespace Xadrez_Console
+{
+    class Program
+    {
+        static void Main(String[] args)
+        {
+            TabuleiroXadrez tab = new TabuleiroXadrez(8, 8);
 
-            Posicao P = new Posicao(3,4);
-
-            System.Console.WriteLine($"Posição: {P}");
-
-            TabuleiroXadrez Tab = new TabuleiroXadrez(8, 8);
+            Tela.ImprimirTabuleiro(tab);
+        }
     }
 }
